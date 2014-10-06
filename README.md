@@ -9,7 +9,7 @@ At the moment, we support the following social networks:
 
     delicious
     deviantart
-    dribble
+    dribbble
     facebook
     flickr
     foursquare
