@@ -1,0 +1,610 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400italic,400,900italic,900,700italic,700,500italic,500);
+/*!
+ *
+ *	:==-- sbb.less --==:
+ *	@package simpleSocialButtons
+ *	@about A bunch of button styles for social network links, with FontAwesome icons. | http://nicklleite.gituhub.io/simpleSocialButtons
+ *	@author Nicholas Lopes Leite
+ *	@version 0.1
+ *	@see http://gituhub.com/nicklleite/simpleSocialButtons
+ *
+ *	License -> http://opensource.org/licenses/mit-license.html
+ *
+ **/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body {
+  height: 100%;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+small {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.copyright {
+  font-size: 28px;
+  font-weight: 300;
+}
+.mention {
+  font-size: 13px;
+  font-weight: 100;
+}
+.btn {
+  background-color: #eeeeee;
+  color: #777777;
+  font-size: 14px;
+  webkit-box-sizing: border-box;
+  moz-box-sizing: border-box;
+  ms-box-sizing: border-box;
+  o-box-sizing: border-box;
+  box-sizing: border-box;
+  webkit-border-radius: 5px;
+  moz-border-radius: 5px;
+  ms-border-radius: 5px;
+  o-border-radius: 5px;
+  border-radius: 5px;
+  border: none;
+  display: inline-block;
+  outline: none;
+  padding: 5px 10px;
+  text-align: center;
+}
+.btn:hover,
+.btnfocus {
+  background-color: #777777;
+}
+.btn:active {
+  background-color: #333333;
+}
+.btn:hover,
+.btn:active,
+.btn:focus {
+  color: white;
+  border: none;
+}
+.btn:before {
+  margin: 0;
+}
+.btn-lg {
+  font-size: 35px;
+  padding: 5px 15px !important;
+}
+.btn-bg {
+  font-size: 28px;
+  padding: 5px 10px !important;
+}
+.btn-sm {
+  font-size: 13px;
+  padding: 4px 8px !important;
+}
+.btn-xs {
+  font-size: 12px;
+  padding: 1px 4px !important;
+}
+.btn.btn-xs:before {
+  margin: 0 10px;
+}
+.delicious {
+  background-color: #295ea8;
+  color: white;
+}
+.delicious:hover,
+.delicious:focus {
+  background-color: #3675ce;
+}
+.delicious:active {
+  background-color: #1f477f;
+}
+.delicious:before {
+  font-family: FontAwesome;
+  margin-right: 5px;
+  content: '\f1a5';
+}
+.deviantart {
+  background-color: #4f6353;
+  color: white;
+}
+.deviantart:hover,
+.deviantart:focus {
+  background-color: #667f6b;
+}
+.deviantart:active {
+  background-color: #39473c;
+}
+.deviantart:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f1bd';
+}
+.dribbble {
+  background-color: #ea4d89;
+  color: white;
+}
+.dribbble:hover,
+.dribbble:focus {
+  background-color: #ef7ba7;
+}
+.dribbble:active {
+  background-color: #e51f6b;
+}
+.dribbble:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f17d';
+}
+.facebook {
+  background-color: #3b5897;
+  color: white;
+}
+.facebook:hover,
+.facebook:focus {
+  background-color: #4b6eb9;
+}
+.facebook:active {
+  background-color: #2c4272;
+}
+.facebook:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f09a';
+}
+.flickr {
+  background-color: #ff0084;
+  color: white;
+}
+.flickr:hover,
+.flickr:focus {
+  background-color: #ff339c;
+}
+.flickr:active {
+  background-color: #cc0069;
+}
+.flickr:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f16e';
+}
+.foursquare {
+  background-color: #0074b3;
+  color: white;
+}
+.foursquare:hover,
+.foursquare:focus {
+  background-color: #0095e5;
+}
+.foursquare:active {
+  background-color: #00537f;
+}
+.foursquare:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f180';
+}
+.github {
+  background-color: #333333;
+  color: white;
+}
+.github:hover,
+.github:focus {
+  background-color: #4d4d4d;
+}
+.github:active {
+  background-color: #1a1a1a;
+}
+.github:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f09b';
+}
+.googleplus {
+  background-color: #de4e3b;
+  color: white;
+}
+.googleplus:hover,
+.googleplus:focus {
+  background-color: #e57566;
+}
+.googleplus:active {
+  background-color: #c43421;
+}
+.googleplus:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f0d5';
+}
+.instagram {
+  background-color: #517fa4;
+  color: white;
+}
+.instagram:hover,
+.instagram:focus {
+  background-color: #6f98b8;
+}
+.instagram:active {
+  background-color: #406482;
+}
+.instagram:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f16d';
+}
+.linkedin {
+  background-color: #007db8;
+  color: white;
+}
+.linkedin:hover,
+.linkedin:focus {
+  background-color: #00a0eb;
+}
+.linkedin:active {
+  background-color: #005b85;
+}
+.linkedin:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f0e1';
+}
+.pinterest {
+  background-color: #cb2025;
+  color: white;
+}
+.pinterest:hover,
+.pinterest:focus {
+  background-color: #e13d42;
+}
+.pinterest:active {
+  background-color: #9f191d;
+}
+.pinterest:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f0d2';
+}
+.reddit {
+  background-color: #ff5500;
+  color: white;
+}
+.reddit:hover,
+.reddit:focus {
+  background-color: #ff7733;
+}
+.reddit:active {
+  background-color: #cc4400;
+}
+.reddit:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f1a1';
+}
+.slideshare {
+  background-color: #f18b1e;
+  color: white;
+}
+.slideshare:hover,
+.slideshare:focus {
+  background-color: #f4a34e;
+}
+.slideshare:active {
+  background-color: #ce710d;
+}
+.slideshare:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f1e7';
+}
+.soundcloud {
+  background-color: #ff3c00;
+  color: white;
+}
+.soundcloud:hover,
+.soundcloud:focus {
+  background-color: #ff6333;
+}
+.soundcloud:active {
+  background-color: #cc3000;
+}
+.soundcloud:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f1be';
+}
+.stumbleupon {
+  background-color: #eb4824;
+  color: white;
+}
+.stumbleupon:hover,
+.stumbleupon:focus {
+  background-color: #ef6f52;
+}
+.stumbleupon:active {
+  background-color: #c93413;
+}
+.stumbleupon:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f1a4';
+}
+.tumblr {
+  background-color: #32506c;
+  color: white;
+}
+.tumblr:hover,
+.tumblr:focus {
+  background-color: #426a8f;
+}
+.tumblr:active {
+  background-color: #223649;
+}
+.tumblr:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f173';
+}
+.twitch {
+  background-color: #6441a4;
+  color: white;
+}
+.twitch:hover,
+.twitch:focus {
+  background-color: #7d5bbe;
+}
+.twitch:active {
+  background-color: #4e3380;
+}
+.twitch:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f1e8';
+}
+.twitter {
+  background-color: #00aceb;
+  color: white;
+}
+.twitter:hover,
+.twitter:focus {
+  background-color: #1fc3ff;
+}
+.twitter:active {
+  background-color: #0087b8;
+}
+.twitter:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f099';
+}
+.vimeo {
+  background-color: #aad44e;
+  color: white;
+}
+.vimeo:hover,
+.vimeo:focus {
+  background-color: #bede78;
+}
+.vimeo:active {
+  background-color: #93c12f;
+}
+.vimeo:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f194';
+}
+.vine {
+  background-color: #00bd8e;
+  color: white;
+}
+.vine:hover,
+.vine:focus {
+  background-color: #00f0b4;
+}
+.vine:active {
+  background-color: #008a67;
+}
+.vine:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f1ca';
+}
+.vk {
+  background-color: #44658d;
+  color: white;
+}
+.vk:hover,
+.vk:focus {
+  background-color: #567eae;
+}
+.vk:active {
+  background-color: #334c6b;
+}
+.vk:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f189';
+}
+.weibo {
+  background-color: #e5152d;
+  color: white;
+}
+.weibo:hover,
+.weibo:focus {
+  background-color: #ed4054;
+}
+.weibo:active {
+  background-color: #b61124;
+}
+.weibo:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f18a';
+}
+.wordpress {
+  background-color: #21759c;
+  color: white;
+}
+.wordpress:hover,
+.wordpress:focus {
+  background-color: #2a94c6;
+}
+.wordpress:active {
+  background-color: #185572;
+}
+.wordpress:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f19a';
+}
+.youtube {
+  background-color: #bd0000;
+  color: white;
+}
+.youtube:hover,
+.youtube:focus {
+  background-color: #f00000;
+}
+.youtube:active {
+  background-color: #8a0000;
+}
+.youtube:before {
+  font-family: FontAwesome;
+  margin: 5px;
+  content: '\f167';
+}
