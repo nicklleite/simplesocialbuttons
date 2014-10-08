@@ -1,0 +1,446 @@
+/*!
+ *
+ *	:==-- sbb.less --==:
+ *	@package simpleSocialButtons
+ *	@about A bunch of button styles for social network links, with FontAwesome icons. | http://nicklleite.gituhub.io/simpleSocialButtons
+ *	@author Nicholas Lopes Leite
+ *	@version 0.1
+ *	@see https://github.com/nicklleite/simplesocialbuttons
+ *
+ *	License -> http://opensource.org/licenses/mit-license.html
+ *
+ **/
+
+// :==-- reset.less --==:
+@import "reset";
+
+// :==-- colors.less --==:
+@import "colors";
+
+// :==-- functions.less --==:
+@import "functions";
+
+// :==-- typography.less --==:
+@import "typography";
+
+.btn {
+	font-size: @font-size-base;
+	background-color: @gray-lighter;
+	color: @gray-light;
+	font-size: @font-size-base;
+	.box-sizing-border-box();
+	.border-radius( 5px );
+	border: none;
+	display: inline-block;
+	outline: none;
+	padding: 5px 10px;
+	text-align: center;
+
+	&:hover, &focus {
+		background-color: @gray-light;
+	}
+
+	&:active {
+		background-color: @gray-dark;
+	}
+
+	&:hover, &:active, &:focus {
+		color: white;
+		border: none;
+	}
+	&:before {
+		margin: 0;
+	}
+}
+.btn-lg { font-size: @font-size-large; padding: 5px 15px !important; }
+.btn-bg { font-size: @font-size-big; padding: 5px 10px !important; }
+.btn-sm { font-size: @font-size-small; padding: 4px 8px !important; }
+.btn-xs { font-size: @font-size-xsmall; padding: 1px 4px !important; }
+.btn.btn-xs:before {
+	margin: 0 10px;
+}
+
+.delicious {
+	background-color: @color-delicious;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-delicious-hover;
+	}
+	&:active {
+		background-color: @color-delicious-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin-right: 5px;
+		content: '\f1a5';
+	}
+}
+.deviantart {
+	background-color: @color-deviantart;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-deviantart-hover;
+	}
+	&:active {
+		background-color: @color-deviantart-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f1bd';
+	}
+}
+.dribbble {
+	background-color: @color-dribbble;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-dribbble-hover;
+	}
+	&:active {
+		background-color: @color-dribbble-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f17d';
+	}
+}
+.facebook {
+	background-color: @color-facebook;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-facebook-hover;
+	}
+	&:active {
+		background-color: @color-facebook-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f09a';
+	}
+}
+.flickr {
+	background-color: @color-flickr;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-flickr-hover;
+	}
+	&:active {
+		background-color: @color-flickr-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f16e';
+	}
+}
+.foursquare {
+	background-color: @color-foursquare;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-foursquare-hover;
+	}
+	&:active {
+		background-color: @color-foursquare-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f180';
+	}
+}
+.github {
+	background-color: @color-github;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-github-hover;
+	}
+	&:active {
+		background-color: @color-github-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f09b';
+	}
+}
+.googleplus {
+	background-color: @color-googleplus;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-googleplus-hover;
+	}
+	&:active {
+		background-color: @color-googleplus-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f0d5';
+	}
+}
+.instagram {
+	background-color: @color-instagram;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-instagram-hover;
+	}
+	&:active {
+		background-color: @color-instagram-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f16d';
+	}
+}
+.linkedin {
+	background-color: @color-linkedin;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-linkedin-hover;
+	}
+	&:active {
+		background-color: @color-linkedin-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f0e1';
+	}
+}
+.pinterest {
+	background-color: @color-pinterest;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-pinterest-hover;
+	}
+	&:active {
+		background-color: @color-pinterest-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f0d2';
+	}
+}
+.reddit {
+	background-color: @color-reddit;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-reddit-hover;
+	}
+	&:active {
+		background-color: @color-reddit-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f1a1';
+	}
+}
+.slideshare {
+	background-color: @color-slideshare;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-slideshare-hover;
+	}
+	&:active {
+		background-color: @color-slideshare-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f1e7';
+	}
+}
+.soundcloud {
+	background-color: @color-soundcloud;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-soundcloud-hover;
+	}
+	&:active {
+		background-color: @color-soundcloud-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f1be';
+	}
+}
+.stumbleupon {
+	background-color: @color-stumbleupon;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-stumbleupon-hover;
+	}
+	&:active {
+		background-color: @color-stumbleupon-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f1a4';
+	}
+}
+.tumblr {
+	background-color: @color-tumblr;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-tumblr-hover;
+	}
+	&:active {
+		background-color: @color-tumblr-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f173';
+	}
+}
+.twitch {
+	background-color: @color-twitch;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-twitch-hover;
+	}
+	&:active {
+		background-color: @color-twitch-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f1e8';
+	}
+}
+.twitter {
+	background-color: @color-twitter;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-twitter-hover;
+	}
+	&:active {
+		background-color: @color-twitter-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f099';
+	}
+}
+.vimeo {
+	background-color: @color-vimeo;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-vimeo-hover;
+	}
+	&:active {
+		background-color: @color-vimeo-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f194';
+	}
+}
+.vine {
+	background-color: @color-vine;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-vine-hover;
+	}
+	&:active {
+		background-color: @color-vine-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f1ca';
+	}
+}
+.vk {
+	background-color: @color-vk;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-vk-hover;
+	}
+	&:active {
+		background-color: @color-vk-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f189';
+	}
+}
+.weibo {
+	background-color: @color-weibo;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-weibo-hover;
+	}
+	&:active {
+		background-color: @color-weibo-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f18a';
+	}
+}
+.wordpress {
+	background-color: @color-wordpress;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-wordpress-hover;
+	}
+	&:active {
+		background-color: @color-wordpress-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f19a';
+	}
+}
+.youtube {
+	background-color: @color-youtube;
+	color: white;
+
+	&:hover, &:focus {
+		background-color: @color-youtube-hover;
+	}
+	&:active {
+		background-color: @color-youtube-active;
+	}
+	&:before {
+		font-family: @font-family-fontawesome;
+		margin: 5px;
+		content: '\f167';
+	}
+}
