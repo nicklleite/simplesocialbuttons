@@ -32,7 +32,7 @@ At the moment, we support the following social networks:
     wordpress
     youtube
 
-**2) How much is this collection can be customized?**
+**2) How much this collection can be customized?**
 
 As much as you can. The styles that I deliver here are just a kick start for the developers who want a cool button for social sharing.
 
