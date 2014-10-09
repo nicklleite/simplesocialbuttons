@@ -4,7 +4,7 @@ A collection of social buttons, that can be almost 100% customizable (the goal i
 
 | 24 butons - 5 sizes 	| Imaginaaatioon 	| Geek stuff 	|
 |--------------------------------------------------------------------------------------------------------------------------------------------	|----------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------	|
-| By default, all the buttons come in 5 different sizes, each with its,respective color and icon. (I've said that all the buttons are flat?) 	| By downloading the package, your imagination is the limit when it comes to the customization of buttons. 	| - No javascript were harmed or used during the process.  - "LESS" do it quickly 	|
+| By default, all the buttons come in 5 different sizes, each with its,respective color and icon. (I've said that all the buttons are flat?) 	| By downloading the package, your imagination is the limit when it comes to the customization of buttons. 	| <ul><li>No javascript were harmed or used during the process.</li><li>"LESS" do it quickly</li></ul> 	|
 
 ##FAQ
 **1) Wich social networks i can find in the collection?**
